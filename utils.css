@@ -23,6 +23,10 @@
     justify-content: space-between;
 }
 
+.flex-col{
+    flex-direction: column;
+}
+
 .font-bold{
     font-weight: bold;
 }

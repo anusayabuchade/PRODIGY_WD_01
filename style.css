@@ -21,5 +21,13 @@
 }
 
 .topleft{
-    
+    width: 50%;
 }
+
+.topright{
+    width: 50%;
+}
+
+.section1{
+    height: 50vh;
+}  
