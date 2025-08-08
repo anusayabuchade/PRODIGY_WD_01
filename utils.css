@@ -19,7 +19,11 @@
     align-items: center;
 }
 
-.justify-between{
+.justify-center{
+    justify-content: center;
+}
+
+.justify-{
     justify-content: space-between;
 }
 
@@ -29,4 +33,14 @@
 
 .font-bold{
     font-weight: bold;
+}
+
+.my-1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+
+.px-2{
+    padding-left: 13px;
+    padding-right: 13px;
 }

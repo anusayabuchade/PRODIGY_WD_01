@@ -22,12 +22,13 @@
 
 .topleft{
     width: 50%;
+    height: 50vh;
 }
 
 .topright{
     width: 50%;
+    height: 50vh;    
 }
 
 .section1{
-    height: 50vh;
 }  
