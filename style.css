@@ -25,11 +25,35 @@
     height: 50vh;
 }
 
+.welcome-tagline {
+    font-size: 1.25rem;       /* Slightly smaller than a main heading */
+    color: #4B5563;           /* Neutral dark gray */
+    margin-bottom: 0.75rem;   /* Slightly more spacing below */
+    font-weight: 500;         /* Medium bold */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
 .topright{
     width: 50%;
     height: 50vh;    
 }
 
-.section1{
+.section1 h1{
+    font-size: 2rem;
 }  
 
+.section2{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.section2 h1{
+    font-size: 2rem;
+} 
+
+.box{
+    margin: 12px 22px;
+    min-width: 33vw;
+}
