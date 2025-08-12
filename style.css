@@ -20,6 +20,23 @@
     margin: 0 12px;
 }
 
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar li a:hover {
+    color: orange;
+}
+
+.navbar li a.active {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+
 .topleft{
     width: 50%;
     height: 50vh;
@@ -117,4 +134,60 @@
 footer{
     padding: 23px;
     text-align: center;
+}
+
+/* Mobile & Tablet Responsiveness */
+@media (max-width: 768px) {
+
+    /* Make all flex containers stack vertically */
+    .flex {
+        flex-direction: column;
+        align-items: center; /* Center content when stacked */
+    }
+
+    /* Full width for top sections */
+    .topleft, .topright {
+        width: 100%;
+        height: auto; /* Let height adjust naturally */
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar li {
+        margin: 8px 0;
+    }
+
+    .navbar li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+.navbar li a:hover {
+    color: orange;
+}
+.navbar li a.active {
+    color: #ff6600;
+    font-weight: bold;
+}
+
+
+    /* Pricing boxes take more width */
+    .box {
+        min-width: 80vw;
+    }
+
+    /* Make pricing & comparison table scrollable */
+    .plantable {
+        overflow-x: auto;
+    }
+
+    /* Adjust padding for sections */
+    .section2, .section3 {
+        padding: 20px;
+    }
 }
