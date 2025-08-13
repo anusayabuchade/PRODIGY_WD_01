@@ -191,3 +191,65 @@ footer{
         padding: 20px;
     }
 }
+
+/* ===== Section3 Compare Plans Redesign ===== */
+.section3 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.section3 table th, .section3 table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+.section3 table th {
+    background: #f8f8f8;
+    font-weight: bold;
+}
+.section3 table tr:nth-child(even) {
+    background: #fdfdfd;
+}
+.section3 table i {
+    color: orange;
+    font-size: 1.2rem;
+}
+.section3 .highlight-col {
+    background: #fff4e6;
+}
+
+/* Mobile Plan Cards */
+.mobile-view {
+    display: none;
+}
+.plan-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #fff;
+}
+.plan-card h2 {
+    color: orange;
+    margin-bottom: 10px;
+}
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+}
+.plan-card ul li {
+    padding: 5px 0;
+}
+.plan-card.highlight-col {
+    border-color: orange;
+    background: #fff7ed;
+}
+
+/* Responsive Switch */
+@media (max-width: 768px) {
+    .desktop-view {
+        display: none;
+    }
+    .mobile-view {
+        display: block;
+    }
+}

@@ -40,7 +40,9 @@
                             Ab quas nostrum excepturi explicabo sit illum fugit, quos non quibusdam ipsam
                             commodi sint doloribus quia ex labore, ullam nihil optio libero.
                         </p>
+                        <br>
                         <p class="deal text-center">The deals end in <span id="demo"></span></p>
+                        <br>
                         <div class="buttons">
                             <button class="btn">Join Now</button>
                             <button class="btn">Contact Us</button>
@@ -98,86 +100,98 @@
             </section>
             <hr>
             <section class="section3">
-                <h1 class="text-center my-2">Compare Plans</h1>
-                <div class="container plantable">
-                    <table class="table text-center">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th>Free</th>
-                                <th>Pro</th>
-                                <th>Enterprise</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row" class="text-start">Public</th>
-                                <td>
-                                    YES
-                                </td>
-                                <td>
-                                    YES
-                                </td>
-                                <td>
-                                    YES
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-start">Private</th>
-                                <td>-</td>
-                                <td>
-                                    YES
-                                </td>
-                                <td>
-                                    YES
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr>
-                                <th scope="row" class="text-start">Permissions</th>
-                                <td>
-                                    YES
-                                </td>
-                                <td>
-                                    YES
-                                </td>
-                                <td>
-                                    YES
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-start">Sharing</th>
-                                <td>-</td>
-                                <td>
-                                    YES
-                                </td>
-                                <td>
-                                    YES
-                                </td>                                
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-start">Unlimited member</th>
-                                <td>-</td>
-                                <td>
-                                    YES
-                                </td>
-                                <td>
-                                    YES
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row" class="text-start">Extra security</th>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>
-                                    YES
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+    <h1 class="text-center my-2">Compare Plans</h1>
+
+    <!-- Desktop Table -->
+    <div class="plantable desktop-view">
+        <table class="table text-center">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Free</th>
+                    <th class="highlight-col">Pro</th>
+                    <th>Enterprise</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" class="text-start">Public</th>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Private</th>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Permissions</th>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Sharing</th>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Unlimited members</th>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                </tr>
+                <tr>
+                    <th scope="row" class="text-start">Extra security</th>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-times"></i></td>
+                    <td><i class="fas fa-check"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Mobile Card View -->
+    <div class="mobile-view">
+        <div class="plan-card">
+            <h2>Free</h2>
+            <ul>
+                <li>✅ Public</li>
+                <li>❌ Private</li>
+                <li>✅ Permissions</li>
+                <li>❌ Sharing</li>
+                <li>❌ Unlimited members</li>
+                <li>❌ Extra security</li>
+            </ul>
+        </div>
+        <div class="plan-card highlight-col">
+            <h2>Pro</h2>
+            <ul>
+                <li>✅ Public</li>
+                <li>✅ Private</li>
+                <li>✅ Permissions</li>
+                <li>✅ Sharing</li>
+                <li>✅ Unlimited members</li>
+                <li>❌ Extra security</li>
+            </ul>
+        </div>
+        <div class="plan-card">
+            <h2>Enterprise</h2>
+            <ul>
+                <li>✅ Public</li>
+                <li>✅ Private</li>
+                <li>✅ Permissions</li>
+                <li>✅ Sharing</li>
+                <li>✅ Unlimited members</li>
+                <li>✅ Extra security</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
             <hr>
         </main>
         <footer>
