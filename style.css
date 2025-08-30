@@ -43,10 +43,10 @@
 }
 
 .welcome-tagline {
-    font-size: 1.25rem;       /* Slightly smaller than a main heading */
-    color: #4B5563;           /* Neutral dark gray */
-    margin-bottom: 0.75rem;   /* Slightly more spacing below */
-    font-weight: 500;         /* Medium bold */
+    font-size: 1.25rem;       
+    color: #4B5563;           
+    margin-bottom: 0.75rem;   
+    font-weight: 500;         
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -136,22 +136,17 @@ footer{
     text-align: center;
 }
 
-/* Mobile & Tablet Responsiveness */
 @media (max-width: 768px) {
-
-    /* Make all flex containers stack vertically */
     .flex {
         flex-direction: column;
-        align-items: center; /* Center content when stacked */
+        align-items: center; 
     }
 
-    /* Full width for top sections */
     .topleft, .topright {
         width: 100%;
-        height: auto; /* Let height adjust naturally */
+        height: auto; 
     }
 
-    /* Navbar adjustments */
     .navbar {
         flex-direction: column;
         height: auto;
@@ -166,33 +161,30 @@ footer{
     text-decoration: none;
     color: black;
     transition: color 0.3s ease;
-}
-.navbar li a:hover {
-    color: orange;
-}
-.navbar li a.active {
-    color: #ff6600;
-    font-weight: bold;
-}
+    }
 
+    .navbar li a:hover {
+        color: orange;
+    }
 
-    /* Pricing boxes take more width */
+    .navbar li a.active {
+        color: #ff6600;
+        font-weight: bold;
+    }
+
     .box {
         min-width: 80vw;
     }
 
-    /* Make pricing & comparison table scrollable */
     .plantable {
         overflow-x: auto;
     }
 
-    /* Adjust padding for sections */
     .section2, .section3 {
         padding: 20px;
     }
 }
 
-/* ===== Section3 Compare Plans Redesign ===== */
 .section3 table {
     width: 100%;
     border-collapse: collapse;
@@ -217,7 +209,6 @@ footer{
     background: #fff4e6;
 }
 
-/* Mobile Plan Cards */
 .mobile-view {
     display: none;
 }
@@ -244,12 +235,202 @@ footer{
     background: #fff7ed;
 }
 
-/* Responsive Switch */
 @media (max-width: 768px) {
     .desktop-view {
         display: none;
     }
     .mobile-view {
         display: block;
+    }
+}
+
+.about {
+    padding: 60px 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-text .btn {
+    margin-top: 10px;
+}
+
+.about-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+
+    .about-img {
+        margin-top: 20px;
+    }
+}
+
+.services {
+    padding: 60px 5vw;
+    background: #fff;
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: orange;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.services .card {
+    flex: 1 1 250px; /* flexible cards, min width 250px */
+    background: #fff;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.services .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.services .card i {
+    font-size: 2.5rem;
+    color: orange;
+    margin-bottom: 15px;
+}
+
+.services .card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.services .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .services-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .services .card {
+        padding: 20px;
+    }
+}
+
+.contact {
+    padding: 60px 5vw;
+    background: #f9f9f9;
+    border-top: 2px solid #eee;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: orange;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    transition: border 0.3s ease;
+    outline: none;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: orange;
+}
+
+.contact form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact form button {
+    align-self: flex-start;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        padding: 40px 20px;
+    }
+
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+
+    .contact form button {
+        align-self: center;
     }
 }
